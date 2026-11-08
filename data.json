@@ -1,0 +1,526 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Cofix",
+      "type": "Кафе",
+      "rating": 4.0,
+      "reviews_count": 5,
+      "avg_price": 170,
+      "distance": "50 м",
+      "walk_time": 1,
+      "address": "4-й Вешняковский проезд, 4к3",
+      "hours": "Пн-Вс 08:00–22:00",
+      "coords": [
+        55.718318,
+        37.795649
+      ],
+      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80",
+      "menu": [
+        {
+          "name": "Капучино",
+          "price": 170
+        },
+        {
+          "name": "Сэндвич",
+          "price": 150
+        }
+      ],
+      "features": [
+        "Всё по одной цене",
+        "Быстро"
+      ],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Кофейни"
+    },
+    {
+      "id": 2,
+      "name": "Roll X",
+      "type": "Ресторан",
+      "rating": 4.8,
+      "reviews_count": 1102,
+      "avg_price": 300,
+      "distance": "150 м",
+      "walk_time": 2,
+      "address": "Рязанский проспект, 75к3",
+      "hours": "Круглосуточно",
+      "coords": [
+        55.71769,
+        37.794105
+      ],
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
+      "menu": [
+        {
+          "name": "Шаурма",
+          "price": 250
+        },
+        {
+          "name": "Кофе с собой",
+          "price": 150
+        }
+      ],
+      "features": [
+        "Круглосуточно",
+        "Хорошее место 2026"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 3,
+      "name": "Rostics",
+      "type": "Ресторан",
+      "rating": 4.2,
+      "reviews_count": 5981,
+      "avg_price": 300,
+      "distance": "200 м",
+      "walk_time": 3,
+      "address": "Рязанский проспект, 75",
+      "hours": "Круглосуточно",
+      "coords": [
+        55.717577,
+        37.793396
+      ],
+      "image": "https://avatars.mds.yandex.net/get-altay/15650736/2a0000019799f635dce0d12027a360e38ba0/XXXL",
+      "menu": [
+        {
+          "name": "Комбо обед",
+          "price": 300
+        },
+        {
+          "name": "Бургер",
+          "price": 200
+        }
+      ],
+      "features": [
+        "Круглосуточно",
+        "Wi-Fi",
+        "Детское меню"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 4,
+      "name": "ВкусВилл",
+      "type": "Магазин",
+      "rating": 4.4,
+      "reviews_count": 531,
+      "avg_price": 250,
+      "distance": "120 м",
+      "walk_time": 2,
+      "address": "4-й Вешняковский проезд, 4",
+      "hours": "Пн-Вс 08:00–22:00",
+      "coords": [
+        55.717347,
+        37.794542
+      ],
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80",
+      "menu": [
+        {
+          "name": "Салат",
+          "price": 200
+        },
+        {
+          "name": "Готовый обед",
+          "price": 300
+        }
+      ],
+      "features": [
+        "Здоровая еда",
+        "Готовые блюда"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Магазины"
+    },
+    {
+      "id": 5,
+      "name": "Чилл Пилл Кофе",
+      "type": "Кафе",
+      "rating": 4.7,
+      "reviews_count": 433,
+      "avg_price": 150,
+      "distance": "280 м",
+      "walk_time": 4,
+      "address": "Рязанский проспект, 77",
+      "hours": "Пн-Вс 08:00–21:00",
+      "coords": [
+        55.716634,
+        37.793742
+      ],
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80",
+      "menu": [
+        {
+          "name": "Капучино",
+          "price": 150
+        },
+        {
+          "name": "Круассан",
+          "price": 120
+        }
+      ],
+      "features": [
+        "Кофе с собой",
+        "Розетки",
+        "Wi-Fi"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Кофейни"
+    },
+    {
+      "id": 6,
+      "name": "Кофе 20/21",
+      "type": "Кафе",
+      "rating": 5.0,
+      "reviews_count": 110,
+      "avg_price": 200,
+      "distance": "300 м",
+      "walk_time": 4,
+      "address": "Рязанский проспект, 77",
+      "hours": "Пн-Вс 08:00–21:00",
+      "coords": [
+        55.717461,
+        37.793909
+      ],
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80",
+      "menu": [
+        {
+          "name": "Капучино",
+          "price": 260
+        },
+        {
+          "name": "Выпечка",
+          "price": 180
+        }
+      ],
+      "features": [
+        "Уютно",
+        "Свежая выпечка"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Кофейни"
+    },
+    {
+      "id": 7,
+      "name": "Турецкий донер",
+      "type": "Ресторан",
+      "rating": 4.2,
+      "reviews_count": 8,
+      "avg_price": 250,
+      "distance": "180 м",
+      "walk_time": 3,
+      "address": "4-й Вешняковский проезд, 4к3",
+      "hours": "Круглосуточно",
+      "coords": [
+        55.718444,
+        37.794014
+      ],
+      "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80",
+      "menu": [
+        {
+          "name": "Донер",
+          "price": 250
+        },
+        {
+          "name": "Шаурма",
+          "price": 220
+        }
+      ],
+      "features": [
+        "Круглосуточно",
+        "Быстро"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 8,
+      "name": "Чайхана Аура",
+      "type": "Ресторан",
+      "rating": 4.0,
+      "reviews_count": 276,
+      "avg_price": 500,
+      "distance": "320 м",
+      "walk_time": 5,
+      "address": "Рязанский проспект, 77",
+      "hours": "Пн-Вс 10:00–02:00",
+      "coords": [
+        55.717118,
+        37.794559
+      ],
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+      "menu": [
+        {
+          "name": "Плов",
+          "price": 400
+        },
+        {
+          "name": "Лагман",
+          "price": 350
+        }
+      ],
+      "features": [
+        "Уйгурская кухня",
+        "Большие порции"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 9,
+      "name": "Шаурма'е",
+      "type": "Ресторан",
+      "rating": 4.9,
+      "reviews_count": 1483,
+      "avg_price": 250,
+      "distance": "200 м",
+      "walk_time": 3,
+      "address": "1-я Новокузьминская улица, 21к2",
+      "hours": "Пн-Вс 10:00–22:00",
+      "coords": [
+        55.715401,
+        37.793044
+      ],
+      "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?w=600&q=80",
+      "menu": [
+        {
+          "name": "Шаурма классическая",
+          "price": 250
+        },
+        {
+          "name": "Шаурма с сыром",
+          "price": 300
+        }
+      ],
+      "features": [
+        "Сочная шаурма",
+        "Быстро"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 10,
+      "name": "Зизифора",
+      "type": "Ресторан",
+      "rating": 4.2,
+      "reviews_count": 627,
+      "avg_price": 400,
+      "distance": "220 м",
+      "walk_time": 3,
+      "address": "Зеленодольская улица, 3, корп. 2",
+      "hours": "Пн-Вс 10:00–23:00",
+      "coords": [
+        55.716969,
+        37.792291
+      ],
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",
+      "menu": [
+        {
+          "name": "Хинкали",
+          "price": 350
+        },
+        {
+          "name": "Хачапури",
+          "price": 400
+        }
+      ],
+      "features": [
+        "Кавказская кухня",
+        "Скидка 20% на самовывоз"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Рестораны"
+    },
+    {
+      "id": 11,
+      "name": "Столовая Финуниверситета",
+      "type": "Столовая",
+      "rating": 4.2,
+      "reviews_count": 41,
+      "avg_price": 150,
+      "distance": "30 м",
+      "walk_time": 1,
+      "address": "4-й Вешняковский проезд, 4, стр. 3, 2 этаж",
+      "hours": "Пн-Пт 07:00–18:00",
+      "coords": [
+        55.718354,
+        37.795654
+      ],
+      "image": "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80",
+      "menu": [
+        {
+          "name": "Первое блюдо",
+          "price": 90
+        },
+        {
+          "name": "Второе с гарниром",
+          "price": 130
+        },
+        {
+          "name": "Салат",
+          "price": 70
+        },
+        {
+          "name": "Компот",
+          "price": 30
+        }
+      ],
+      "features": [
+        "150 посадочных мест",
+        "Горячее питание",
+        "Оплата картой"
+      ],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Быстрое питание"
+    },
+    {
+      "id": 12,
+      "name": "Буфет Финуниверситета",
+      "type": "Буфет",
+      "rating": 4.3,
+      "reviews_count": 28,
+      "avg_price": 100,
+      "distance": "20 м",
+      "walk_time": 1,
+      "address": "4-й Вешняковский проезд, 4, корп. 1, 1 этаж",
+      "hours": "Пн-Пт 08:00–18:00",
+      "coords": [
+        55.717939,
+        37.795511
+      ],
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600&q=80",
+      "menu": [
+        {
+          "name": "Пирожок",
+          "price": 50
+        },
+        {
+          "name": "Сэндвич",
+          "price": 120
+        },
+        {
+          "name": "Чай",
+          "price": 30
+        },
+        {
+          "name": "Кофе",
+          "price": 80
+        }
+      ],
+      "features": [
+        "Быстрый перекус",
+        "Выпечка",
+        "Кофе с собой"
+      ],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Быстрое питание"
+    },
+    {
+      "id": 13,
+      "name": "Супер Лента",
+      "type": "Магазин",
+      "rating": 4.2,
+      "reviews_count": 1008,
+      "avg_price": 200,
+      "distance": "250 м",
+      "walk_time": 4,
+      "address": "Рязанский проспект, 75с1",
+      "hours": "Пн-Вс 08:00–23:00",
+      "coords": [
+        55.71764,
+        37.792023
+      ],
+      "image": "https://avatars.mds.yandex.net/get-altay/5457543/2a0000017d17ee2ea6537884f4eb013af853/XXXL",
+      "menu": [
+        {
+          "name": "Готовый обед",
+          "price": 250
+        },
+        {
+          "name": "Салат на развес",
+          "price": 180
+        },
+        {
+          "name": "Выпечка",
+          "price": 60
+        }
+      ],
+      "features": [
+        "Готовая еда",
+        "Кулинария",
+        "Большой выбор"
+      ],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Информация о скидке студентам пока не подтверждена. Уточните перед заказом, нужен ли студенческий билет.",
+        "checked_at": null,
+        "source": null
+      },
+      "category": "Магазины"
+    }
+  ]
+}

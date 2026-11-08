@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#233E76">
+    <title>Питание рядом: навигатор студента</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaflet.css">
+    <script src="leaflet.js"></script>
+</head>
+<body>
+    <a class="skip-content" href="#filters">Перейти к поиску заведений</a>
+
+    <!-- БОКОВОЕ МЕНЮ -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0198AF" stroke-width="2" stroke-linejoin="round">
+                    <path d="M12 2L21 7v10l-9 5-9-5V7z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <div>
+                    <div class="sidebar-title">Фишка</div>
+                    <div class="sidebar-subtitle">Навигатор студента</div>
+                </div>
+            </div>
+            <button class="sidebar-close" onclick="closeSidebar()" aria-label="Закрыть">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="sidebar-item" onclick="sidebarAction('map')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+                    <line x1="8" y1="2" x2="8" y2="18"/>
+                    <line x1="16" y1="6" x2="16" y2="22"/>
+                </svg>
+                <span>Карта</span>
+            </button>
+
+            <button class="sidebar-item" onclick="sidebarAction('catalog')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"/>
+                    <line x1="8" y1="12" x2="21" y2="12"/>
+                    <line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/>
+                    <line x1="3" y1="12" x2="3.01" y2="12"/>
+                    <line x1="3" y1="18" x2="3.01" y2="18"/>
+                </svg>
+                <span>Каталог</span>
+            </button>
+
+            <button class="sidebar-item" onclick="sidebarAction('favorites')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span>Избранное</span>
+                <span class="sidebar-count" id="sidebarFavCount">0</span>
+            </button>
+
+            <button class="sidebar-item" onclick="sidebarAction('export')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Экспорт CSV</span>
+            </button>
+
+            <div class="sidebar-divider"></div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-footer-text">Данные обновлены: сентябрь 2026</div>
+            <div class="sidebar-footer-text small">Всего 13 мест рядом с вузом</div>
+        </div>
+    </aside>
+
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="header-inner">
+            <button class="icon-btn" onclick="toggleSidebar()" aria-label="Меню">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                    <line x1="3" y1="7" x2="21" y2="7"/>
+                    <line x1="3" y1="12" x2="16" y2="12"/>
+                    <line x1="3" y1="17" x2="21" y2="17"/>
+                </svg>
+            </button>
+
+            <div class="header-center">
+                <h1>4-й Вешняковский проезд, 4к3</h1>
+                <div class="live-status" id="liveStatus">
+                    <span class="live-dot" id="liveDot"></span>
+                    <span id="liveText">Загрузка...</span>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Поиск" onclick="toggleSearch()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                        <circle cx="11" cy="11" r="7"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </button>
+                <button class="icon-btn" id="notifBtn" aria-label="Уведомления" onclick="toggleNotifications(event)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                        <path d="M12 2L21 7v10l-9 5-9-5V7z"/>
+                    </svg>
+                    <span class="notif-dot" id="notifDot"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ПАНЕЛЬ УВЕДОМЛЕНИЙ -->
+    <div class="notif-panel" id="notifPanel">
+        <div class="notif-header">
+            <h3>Уведомления</h3>
+            <button class="notif-close" onclick="closeNotifications()" aria-label="Закрыть">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="notif-list" id="notifList"></div>
+    </div>
+
+    <!-- ПОИСК -->
+    <div class="search-panel" id="searchPanel">
+        <div class="search-bar">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Найти кафе, столовую, магазин..."
+                autocomplete="off"
+            >
+            <button class="search-clear" id="searchClear" onclick="clearSearch()" aria-label="Очистить" style="display: none;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <button class="search-btn" onclick="closeSearch()" aria-label="Закрыть поиск">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-card">
+                <button class="hero-chevron" aria-label="Свернуть">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <h2>Питание рядом</h2>
+                <div class="hero-row">
+                    <span class="hero-star">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </span>
+                    <span>Навигатор студента</span>
+                </div>
+                <div class="hero-row">
+                    <span class="hero-pin">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </span>
+                    <span>Внутри кампуса, 1 этаж</span>
+                </div>
+            </div>
+
+            <div class="hero-green">
+                <div class="hero-green-row">
+                    <span class="hero-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0198AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </span>
+                    <span class="hero-green-text">Найди, где вкусно и недорого поесть рядом с университетом</span>
+                    <span class="hero-count">13 мест</span>
+                </div>
+
+                <div class="hero-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                        <path d="M12 2L21 7v10l-9 5-9-5V7z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Фишка</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОСНОВНАЯ СЕТКА -->
+        <div class="main-grid">
+
+            <!-- ЛЕВАЯ КОЛОНКА -->
+            <div class="left-col">
+
+                <!-- СЕКЦИЯ "ПИТАНИЕ В КАМПУСЕ" -->
+                <section class="campus-section">
+                    <h3 class="section-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0198AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 6px;">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+                        </svg>
+                        Питание в кампусе
+                    </h3>
+                    <div class="campus-list" id="campusList"></div>
+                </section>
+
+                <!-- КАРТА -->
+                <div id="map"></div>
+
+                <!-- БЛЮДА -->
+                <!-- ЛУЧШЕЕ РЯДОМ -->
+                <section class="dishes">
+                    <h3 class="section-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 6px;">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        Лучшее рядом
+                    </h3>
+                    <div class="dishes-grid" id="topRated"></div>
+                </section>
+            </div>
+
+            <!-- ПРАВАЯ КОЛОНКА -->
+            <div class="right-col">
+
+                <!-- ФИЛЬТРЫ -->
+                <div class="filters" id="filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="open">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Открыто сейчас
+                    </button>
+                    <button class="filter-btn" data-filter="cheap">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M8 14h8"/>
+                        </svg>
+                        До 150 ₽
+                    </button>
+                    <button class="filter-btn" data-filter="walk">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        5 мин пешком
+                    </button>
+                    <button class="filter-btn" data-filter="student">Скидки студентам</button>
+                    <button class="filter-btn export-btn" onclick="exportCSV()">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Экспорт CSV
+                    </button>
+                    <button class="filter-btn favorite-filter-btn" data-filter="favorites">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        Избранное <span class="fav-count" id="favCount">0</span>
+                    </button>
+                </div>
+
+                <!-- СПИСОК ЗАВЕДЕНИЙ -->
+                <section class="places-section">
+
+                    <div class="places-header">
+                        <h3 class="section-title" style="padding: 0;">Рядом с университетом</h3>
+                        <div class="places-controls">
+                            <span class="results-count" id="resultsCount">0 мест</span>
+                            <div class="sort-dropdown">
+                                <button class="sort-btn" onclick="toggleSort()" aria-label="Сортировка">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="3" y1="6" x2="21" y2="6"/>
+                                        <line x1="6" y1="12" x2="18" y2="12"/>
+                                        <line x1="9" y1="18" x2="15" y2="18"/>
+                                    </svg>
+                                    <span id="sortLabel">По расстоянию</span>
+                                </button>
+                                <div class="sort-menu" id="sortMenu">
+                                    <button data-sort="distance" class="active">По расстоянию</button>
+                                    <button data-sort="rating">По рейтингу</button>
+                                    <button data-sort="price">По цене</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="places-list" id="placesList"></div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+    
+    <!-- ПАНЕЛЬ СРАВНЕНИЯ -->
+    <div class="compare-bar" id="compareBar">
+        <div class="compare-bar-info">
+            <span class="compare-count" id="compareCount">0</span>
+            <span>выбрано для сравнения</span>
+        </div>
+        <div class="compare-bar-actions">
+            <button class="compare-clear" onclick="clearCompare()">Сбросить</button>
+            <button class="compare-go" onclick="showCompare()" id="compareGoBtn" disabled>Сравнить</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
