@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="leaflet.css">
-    <script src="leaflet.js"></script>
+
 </head>
 <body>
     <a class="skip-content" href="#filters">Перейти к поиску заведений</a>
@@ -80,8 +79,8 @@
         </nav>
 
         <div class="sidebar-footer">
-            <div class="sidebar-footer-text">Данные обновлены: сентябрь 2026</div>
-            <div class="sidebar-footer-text small">Всего 13 мест рядом с вузом</div>
+            <div class="sidebar-footer-text">Проверка источников: 08.11.2026</div>
+            <div class="sidebar-footer-text small">Всего 13 записей · 5 адресов подтверждено рядом с вузом</div>
         </div>
     </aside>
 
@@ -97,7 +96,7 @@
             </button>
 
             <div class="header-center">
-                <h1>4-й Вешняковский проезд, 4к3</h1>
+                <h1>4-й Вешняковский проезд, 4, стр. 3</h1>
                 <div class="live-status" id="liveStatus">
                     <span class="live-dot" id="liveDot"></span>
                     <span id="liveText">Загрузка...</span>
@@ -189,7 +188,7 @@
                             <circle cx="12" cy="10" r="3"/>
                         </svg>
                     </span>
-                    <span>Внутри кампуса, 1 этаж</span>
+                    <span>Учебный проект студентов Финуниверситета</span>
                 </div>
             </div>
 
@@ -202,7 +201,7 @@
                         </svg>
                     </span>
                     <span class="hero-green-text">Найди, где вкусно и недорого поесть рядом с университетом</span>
-                    <span class="hero-count">13 мест</span>
+                    <span class="hero-count">13 записей · 5 адресов подтверждено</span>
                 </div>
 
                 <div class="hero-badge">
@@ -233,7 +232,7 @@
                 </section>
 
                 <!-- КАРТА -->
-                <div id="map"></div>
+                <div id="map" aria-label="Яндекс.Карты"><div class="map-message" role="status">Подключаем Яндекс.Карты…</div></div><p class="map-caption" id="mapCaption">На карте показываем только подтверждённые адреса после определения координат Яндексом.</p>
 
                 <!-- БЛЮДА -->
                 <!-- ЛУЧШЕЕ РЯДОМ -->
@@ -242,7 +241,7 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 6px;">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                         </svg>
-                        Лучшее рядом
+                        Проверенные адреса
                     </h3>
                     <div class="dishes-grid" id="topRated"></div>
                 </section>
@@ -266,11 +265,11 @@
                         </svg>
                         До 150 ₽
                     </button>
-                    <button class="filter-btn" data-filter="walk">
+                    <button class="filter-btn" data-filter="verified">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
                         </svg>
-                        5 мин пешком
+                        Проверенные адреса
                     </button>
                     <button class="filter-btn" data-filter="student">Скидки студентам</button>
                     <button class="filter-btn export-btn" onclick="exportCSV()">
@@ -303,11 +302,11 @@
                                         <line x1="6" y1="12" x2="18" y2="12"/>
                                         <line x1="9" y1="18" x2="15" y2="18"/>
                                     </svg>
-                                    <span id="sortLabel">По расстоянию</span>
+                                    <span id="sortLabel">По названию</span>
                                 </button>
                                 <div class="sort-menu" id="sortMenu">
-                                    <button data-sort="distance" class="active">По расстоянию</button>
-                                    <button data-sort="rating">По рейтингу</button>
+                                    <button data-sort="name" class="active">По названию</button>
+                                    
                                     <button data-sort="price">По цене</button>
                                 </div>
                             </div>
@@ -338,6 +337,7 @@
         </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
