@@ -11,7 +11,10 @@
       "walk_time": null,
       "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3",
       "hours": "Пн–Пт 08:00–19:00; Сб 08:00–16:00; Вс — уточняйте",
-      "coords": null,
+      "coords": [
+        55.718282,
+        37.7956136
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -32,7 +35,7 @@
         "source_label": "Официальный список кофеен Cofix"
       },
       "original_address": "4-й Вешняковский проезд, 4к3",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": {
         "days": {
           "1": [
@@ -82,7 +85,10 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
     },
     {
       "id": 2,
@@ -95,7 +101,10 @@
       "walk_time": null,
       "address": "Москва, Рязанский проспект, 75, корп. 2",
       "hours": "Круглосуточно",
-      "coords": null,
+      "coords": [
+        55.717575,
+        37.793407
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -115,7 +124,7 @@
         "source_label": "Сайт заведения в Яндекс Бизнесе"
       },
       "original_address": "Рязанский проспект, 75к3",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": {
         "days": {
           "0": [
@@ -170,7 +179,10 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://roll-x-rjazanskij-prospekt.clients.site/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
     },
     {
       "id": 3,
@@ -474,7 +486,10 @@
       "walk_time": null,
       "address": "Москва, Зеленодольская улица, 3, корп. 2",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.715846,
+        37.7914
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -495,7 +510,7 @@
         "note": "В источниках расходится время закрытия: требуется уточнение."
       },
       "original_address": "Зеленодольская улица, 3, корп. 2",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -503,7 +518,10 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://zizifora.clients.site/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
     },
     {
       "id": 11,
@@ -516,7 +534,10 @@
       "walk_time": null,
       "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3, 2 этаж",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.718282,
+        37.7956136
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -537,7 +558,7 @@
         "source_label": "Финансовый университет"
       },
       "original_address": "4-й Вешняковский проезд, 4, стр. 3, 2 этаж",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -545,7 +566,10 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
     },
     {
       "id": 12,
@@ -558,7 +582,10 @@
       "walk_time": null,
       "address": "Москва, 4-й Вешняковский проезд, 4, корп. 1, 1 этаж",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.718207,
+        37.795079
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -579,7 +606,7 @@
         "source_label": "Финансовый университет"
       },
       "original_address": "4-й Вешняковский проезд, 4, корп. 1, 1 этаж",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -587,7 +614,10 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/213/moscow/house/4_y_veshnyakovskiy_proyezd_4k1/Z04YcQ5lSUIOQFtvfXtweX5jYw==/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
     },
     {
       "id": 13,
