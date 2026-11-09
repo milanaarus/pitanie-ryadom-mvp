@@ -1,1 +1,717 @@
-window.PITANIE_DATA = {"places": [{"id": 1, "name": "Cofix", "type": "Кафе", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3", "hours": "Пн–Пт 08:00–19:00; Сб 08:00–16:00; Вс — уточняйте", "coords": [55.718282, 37.7956136], "image": "placeholder.svg", "menu": [], "features": [], "inCampus": true, "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Кофейни", "verification": {"status": "confirmed", "checked_at": "2026-11-08", "source": "https://cofix.global/ru-ru/locations/moscow/", "source_label": "Официальный список кофеен Cofix"}, "original_address": "4-й Вешняковский проезд, 4к3", "coordinate_status": "confirmed", "schedule": {"days": {"1": [["08:00", "19:00"]], "2": [["08:00", "19:00"]], "3": [["08:00", "19:00"]], "4": [["08:00", "19:00"]], "5": [["08:00", "19:00"]], "6": [["08:00", "16:00"]], "0": null}, "source": "https://cofix.global/ru-ru/locations/moscow/", "checked_at": "2026-11-08"}, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}, "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/", "coordinate_checked_at": "2026-11-08", "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."}, {"id": 2, "name": "Roll X", "type": "Быстрое питание", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Москва, Рязанский проспект, 75, корп. 2", "hours": "Круглосуточно", "coords": [55.717575, 37.793407], "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Быстрое питание", "verification": {"status": "confirmed", "checked_at": "2026-11-08", "source": "https://roll-x-rjazanskij-prospekt.clients.site/", "source_label": "Сайт заведения в Яндекс Бизнесе"}, "original_address": "Рязанский проспект, 75к3", "coordinate_status": "confirmed", "schedule": {"days": {"0": [["00:00", "24:00"]], "1": [["00:00", "24:00"]], "2": [["00:00", "24:00"]], "3": [["00:00", "24:00"]], "4": [["00:00", "24:00"]], "5": [["00:00", "24:00"]], "6": [["00:00", "24:00"]]}, "source": "https://roll-x-rjazanskij-prospekt.clients.site/", "checked_at": "2026-11-08"}, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}, "coordinate_source": "https://roll-x-rjazanskij-prospekt.clients.site/", "coordinate_checked_at": "2026-11-08", "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."}, {"id": 3, "name": "Rostics", "type": "Ресторан", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Рязанский проспект, 75", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Рестораны", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null}, "original_address": "Рязанский проспект, 75", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 4, "name": "ВкусВилл", "type": "Магазин", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "4-й Вешняковский проезд, 4", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Магазины", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null}, "original_address": "4-й Вешняковский проезд, 4", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 5, "name": "Чилл Пилл Кофе", "type": "Кафе", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Рязанский проспект, 77", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Кофейни", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null, "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."}, "original_address": "Рязанский проспект, 77", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 6, "name": "Кофе 20/21", "type": "Кафе", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Рязанский проспект, 77", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Кофейни", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null, "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."}, "original_address": "Рязанский проспект, 77", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 7, "name": "Турецкий донер", "type": "Ресторан", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "4-й Вешняковский проезд, 4к3", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Рестораны", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null}, "original_address": "4-й Вешняковский проезд, 4к3", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 8, "name": "Чайхана Аура", "type": "Ресторан", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Рязанский проспект, 77", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Рестораны", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null, "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."}, "original_address": "Рязанский проспект, 77", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 9, "name": "Шаурма'е", "type": "Ресторан", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "1-я Новокузьминская улица, 21к2", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Рестораны", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null, "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."}, "original_address": "1-я Новокузьминская улица, 21к2", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}, {"id": 10, "name": "Зизифора", "type": "Ресторан", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Москва, Зеленодольская улица, 3, корп. 2", "hours": null, "coords": [55.715846, 37.7914], "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Рестораны", "verification": {"status": "confirmed", "checked_at": "2026-11-08", "source": "https://zizifora.clients.site/", "source_label": "Сайт заведения в Яндекс Бизнесе", "note": "В источниках расходится время закрытия: требуется уточнение."}, "original_address": "Зеленодольская улица, 3, корп. 2", "coordinate_status": "confirmed", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}, "coordinate_source": "https://zizifora.clients.site/", "coordinate_checked_at": "2026-11-08", "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."}, {"id": 11, "name": "Столовая Финуниверситета", "type": "Столовая", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3, 2 этаж", "hours": null, "coords": [55.718282, 37.7956136], "image": "placeholder.svg", "menu": [], "features": [], "inCampus": true, "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Быстрое питание", "verification": {"status": "confirmed", "checked_at": "2026-11-08", "source": "https://www.fa.ru/for-students/support/catering/", "source_label": "Финансовый университет"}, "original_address": "4-й Вешняковский проезд, 4, стр. 3, 2 этаж", "coordinate_status": "confirmed", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}, "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/", "coordinate_checked_at": "2026-11-08", "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."}, {"id": 12, "name": "Кафетерий Финуниверситета", "type": "Буфет", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Москва, 4-й Вешняковский проезд, 4, корп. 1, 1 этаж", "hours": null, "coords": [55.718207, 37.795079], "image": "placeholder.svg", "menu": [], "features": [], "inCampus": true, "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Быстрое питание", "verification": {"status": "confirmed", "checked_at": "2026-11-08", "source": "https://www.fa.ru/for-students/support/catering/", "source_label": "Финансовый университет"}, "original_address": "4-й Вешняковский проезд, 4, корп. 1, 1 этаж", "coordinate_status": "confirmed", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}, "coordinate_source": "https://yandex.ru/maps/213/moscow/house/4_y_veshnyakovskiy_proyezd_4k1/Z04YcQ5lSUIOQFtvfXtweX5jYw==/", "coordinate_checked_at": "2026-11-08", "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."}, {"id": 13, "name": "Супер Лента", "type": "Магазин", "rating": null, "reviews_count": null, "avg_price": null, "distance": null, "walk_time": null, "address": "Рязанский проспект, 75с1", "hours": null, "coords": null, "image": "placeholder.svg", "menu": [], "features": [], "student_discount": {"status": "unknown", "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.", "source": null, "checked_at": null, "valid_until": null, "student_card_required": null}, "category": "Магазины", "verification": {"status": "pending", "checked_at": "2026-11-08", "source": null, "source_label": null, "note": "Адрес есть в официальных материалах Ленты 2025 года; текущая работа не подтверждена.", "historical_source": "https://lenta.com/globalassets/actions-news/-/_2025/02/Adresnaya-programma-Dubayskiy-shokolad-fevral-mart-2025.pdf"}, "original_address": "Рязанский проспект, 75с1", "coordinate_status": "needs_geocoding", "schedule": null, "price": {"status": "unknown", "kind": null, "amount": null, "source": null, "checked_at": null}}], "checked_at": "2026-11-08"};
+window.PITANIE_DATA = {
+  "places": [
+    {
+      "id": 1,
+      "name": "Cofix",
+      "type": "Кафе",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3",
+      "hours": "Пн–Пт 08:00–19:00; Сб 08:00–16:00; Вс — уточняйте",
+      "coords": [
+        55.718282,
+        37.7956136
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Кофейни",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-08",
+        "source": "https://cofix.global/ru-ru/locations/moscow/",
+        "source_label": "Официальный список кофеен Cofix"
+      },
+      "original_address": "4-й Вешняковский проезд, 4к3",
+      "coordinate_status": "confirmed",
+      "schedule": {
+        "days": {
+          "1": [
+            [
+              "08:00",
+              "19:00"
+            ]
+          ],
+          "2": [
+            [
+              "08:00",
+              "19:00"
+            ]
+          ],
+          "3": [
+            [
+              "08:00",
+              "19:00"
+            ]
+          ],
+          "4": [
+            [
+              "08:00",
+              "19:00"
+            ]
+          ],
+          "5": [
+            [
+              "08:00",
+              "19:00"
+            ]
+          ],
+          "6": [
+            [
+              "08:00",
+              "16:00"
+            ]
+          ],
+          "0": null
+        },
+        "source": "https://cofix.global/ru-ru/locations/moscow/",
+        "checked_at": "2026-11-08"
+      },
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
+    },
+    {
+      "id": 2,
+      "name": "Roll X",
+      "type": "Быстрое питание",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75, корп. 2",
+      "hours": "Круглосуточно",
+      "coords": [
+        55.717575,
+        37.793407
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Быстрое питание",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-08",
+        "source": "https://roll-x-rjazanskij-prospekt.clients.site/",
+        "source_label": "Сайт заведения в Яндекс Бизнесе"
+      },
+      "original_address": "Рязанский проспект, 75к3",
+      "coordinate_status": "confirmed",
+      "schedule": {
+        "days": {
+          "0": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "1": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "2": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "3": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "4": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "5": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ],
+          "6": [
+            [
+              "00:00",
+              "24:00"
+            ]
+          ]
+        },
+        "source": "https://roll-x-rjazanskij-prospekt.clients.site/",
+        "checked_at": "2026-11-08"
+      },
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://roll-x-rjazanskij-prospekt.clients.site/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
+    },
+    {
+      "id": 3,
+      "name": "Rostic’s",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75, корп. 3",
+      "hours": null,
+      "coords": [
+        55.717458,
+        37.793879
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/rostic_s/1395887775/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "Рязанский проспект, 75",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/rostic_s/1395887775/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/rostic_s/1395887775/"
+    },
+    {
+      "id": 4,
+      "name": "ВкусВилл",
+      "type": "Магазин",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75Б, стр. 2, этаж 1",
+      "hours": null,
+      "coords": [
+        55.717924,
+        37.793292
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Магазины",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/vkusvill/1381368558/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "4-й Вешняковский проезд, 4",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/vkusvill/1381368558/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/vkusvill/1381368558/"
+    },
+    {
+      "id": 5,
+      "name": "Чилл Пилл Кофе",
+      "type": "Кафе",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 44, этаж 1",
+      "hours": null,
+      "coords": [
+        55.71627,
+        37.791218
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Кофейни",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "Рязанский проспект, 77",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/"
+    },
+    {
+      "id": 6,
+      "name": "Кофе 20/21",
+      "type": "Кафе",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 46, корп. 3",
+      "hours": null,
+      "coords": [
+        55.717112,
+        37.791729
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Кофейни",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/kofe_20_21/66938121537/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "Рязанский проспект, 77",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/kofe_20_21/66938121537/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/kofe_20_21/66938121537/"
+    },
+    {
+      "id": 7,
+      "name": "Чайхана Аура",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 46, корп. 6",
+      "hours": null,
+      "coords": [
+        55.716927,
+        37.794073
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "4-й Вешняковский проезд, 4к3",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/"
+    },
+    {
+      "id": 9,
+      "name": "Шаварм’е",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, 1-я Новокузьминская улица, 21, корп. 2",
+      "hours": null,
+      "coords": [
+        55.715388,
+        37.793059
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/shavarm_ye/206749096843/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "1-я Новокузьминская улица, 21к2",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/shavarm_ye/206749096843/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/shavarm_ye/206749096843/"
+    },
+    {
+      "id": 10,
+      "name": "Зизифора",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Зеленодольская улица, 3, корп. 2",
+      "hours": null,
+      "coords": [
+        55.715846,
+        37.7914
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-08",
+        "source": "https://zizifora.clients.site/",
+        "source_label": "Сайт заведения в Яндекс Бизнесе",
+        "note": "В источниках расходится время закрытия: требуется уточнение."
+      },
+      "original_address": "Зеленодольская улица, 3, корп. 2",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://zizifora.clients.site/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
+    },
+    {
+      "id": 11,
+      "name": "Столовая Финуниверситета",
+      "type": "Столовая",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, 4-й Вешняковский проезд, 4, стр. 3, 2 этаж",
+      "hours": null,
+      "coords": [
+        55.718282,
+        37.7956136
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Быстрое питание",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-08",
+        "source": "https://www.fa.ru/for-students/support/catering/",
+        "source_label": "Финансовый университет"
+      },
+      "original_address": "4-й Вешняковский проезд, 4, стр. 3, 2 этаж",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://cofix.global/ru-ru/locations/moscow/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
+    },
+    {
+      "id": 12,
+      "name": "Кафетерий Финуниверситета",
+      "type": "Буфет",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, 4-й Вешняковский проезд, 4, корп. 1, 1 этаж",
+      "hours": null,
+      "coords": [
+        55.718207,
+        37.795079
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "inCampus": true,
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Быстрое питание",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-08",
+        "source": "https://www.fa.ru/for-students/support/catering/",
+        "source_label": "Финансовый университет"
+      },
+      "original_address": "4-й Вешняковский проезд, 4, корп. 1, 1 этаж",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/213/moscow/house/4_y_veshnyakovskiy_proyezd_4k1/Z04YcQ5lSUIOQFtvfXtweX5jYw==/",
+      "coordinate_checked_at": "2026-11-08",
+      "coordinate_note": "Точка здания или организации по источнику, не точный вход в помещение."
+    },
+    {
+      "id": 13,
+      "name": "Супер Лента",
+      "type": "Магазин",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75, стр. 1",
+      "hours": null,
+      "coords": [
+        55.71778,
+        37.79242
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Магазины",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/super_lenta/52967738788/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
+      },
+      "original_address": "Рязанский проспект, 75с1",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/super_lenta/52967738788/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/super_lenta/52967738788/"
+    }
+  ],
+  "checked_at": "2026-11-09",
+  "excluded_places": [
+    {
+      "id": 8,
+      "name": "Чайхана Аура",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75, корп. 3",
+      "hours": null,
+      "coords": [
+        55.717503,
+        37.794046
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/turetskiy_doner/228812562635/",
+        "source_label": "Яндекс.Карты — закрывшееся заведение"
+      },
+      "original_address": "Рязанский проспект, 77",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "operation_status": "permanently_closed",
+      "excluded_reason": "В Яндекс.Картах: «Больше не работает»."
+    }
+  ]
+};

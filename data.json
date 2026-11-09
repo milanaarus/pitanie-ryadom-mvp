@@ -186,16 +186,19 @@
     },
     {
       "id": 3,
-      "name": "Rostics",
+      "name": "Rostic’s",
       "type": "Ресторан",
       "rating": null,
       "reviews_count": null,
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "Рязанский проспект, 75",
+      "address": "Москва, Рязанский проспект, 75, корп. 3",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.717458,
+        37.793879
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -209,13 +212,13 @@
       },
       "category": "Рестораны",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/rostic_s/1395887775/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "Рязанский проспект, 75",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -223,7 +226,11 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/rostic_s/1395887775/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/rostic_s/1395887775/"
     },
     {
       "id": 4,
@@ -234,9 +241,12 @@
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "4-й Вешняковский проезд, 4",
+      "address": "Москва, Рязанский проспект, 75Б, стр. 2, этаж 1",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.717924,
+        37.793292
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -250,13 +260,13 @@
       },
       "category": "Магазины",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/vkusvill/1381368558/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "4-й Вешняковский проезд, 4",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -264,7 +274,11 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/vkusvill/1381368558/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/vkusvill/1381368558/"
     },
     {
       "id": 5,
@@ -275,9 +289,12 @@
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "Рязанский проспект, 77",
+      "address": "Москва, Рязанский проспект, 44, этаж 1",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.71627,
+        37.791218
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -291,14 +308,13 @@
       },
       "category": "Кофейни",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null,
-        "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "Рязанский проспект, 77",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -306,7 +322,11 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/chill_pill_kofe/97490758111/"
     },
     {
       "id": 6,
@@ -317,9 +337,12 @@
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "Рязанский проспект, 77",
+      "address": "Москва, Рязанский проспект, 46, корп. 3",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.717112,
+        37.791729
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -333,14 +356,13 @@
       },
       "category": "Кофейни",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null,
-        "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/kofe_20_21/66938121537/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "Рязанский проспект, 77",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -348,51 +370,14 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/kofe_20_21/66938121537/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/kofe_20_21/66938121537/"
     },
     {
       "id": 7,
-      "name": "Турецкий донер",
-      "type": "Ресторан",
-      "rating": null,
-      "reviews_count": null,
-      "avg_price": null,
-      "distance": null,
-      "walk_time": null,
-      "address": "4-й Вешняковский проезд, 4к3",
-      "hours": null,
-      "coords": null,
-      "image": "placeholder.svg",
-      "menu": [],
-      "features": [],
-      "student_discount": {
-        "status": "unknown",
-        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
-        "source": null,
-        "checked_at": null,
-        "valid_until": null,
-        "student_card_required": null
-      },
-      "category": "Рестораны",
-      "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null
-      },
-      "original_address": "4-й Вешняковский проезд, 4к3",
-      "coordinate_status": "needs_geocoding",
-      "schedule": null,
-      "price": {
-        "status": "unknown",
-        "kind": null,
-        "amount": null,
-        "source": null,
-        "checked_at": null
-      }
-    },
-    {
-      "id": 8,
       "name": "Чайхана Аура",
       "type": "Ресторан",
       "rating": null,
@@ -400,9 +385,12 @@
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "Рязанский проспект, 77",
+      "address": "Москва, Рязанский проспект, 46, корп. 6",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.716927,
+        37.794073
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -416,14 +404,13 @@
       },
       "category": "Рестораны",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null,
-        "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
-      "original_address": "Рязанский проспект, 77",
-      "coordinate_status": "needs_geocoding",
+      "original_address": "4-й Вешняковский проезд, 4к3",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -431,20 +418,27 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/chaykhana_aura/20073585592/"
     },
     {
       "id": 9,
-      "name": "Шаурма'е",
+      "name": "Шаварм’е",
       "type": "Ресторан",
       "rating": null,
       "reviews_count": null,
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "1-я Новокузьминская улица, 21к2",
+      "address": "Москва, 1-я Новокузьминская улица, 21, корп. 2",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.715388,
+        37.793059
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -458,14 +452,13 @@
       },
       "category": "Рестораны",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null,
-        "note": "Адрес из исходного каталога не подтверждён; возможен другой филиал."
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/shavarm_ye/206749096843/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "1-я Новокузьминская улица, 21к2",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -473,7 +466,11 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/shavarm_ye/206749096843/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/shavarm_ye/206749096843/"
     },
     {
       "id": 10,
@@ -628,9 +625,12 @@
       "avg_price": null,
       "distance": null,
       "walk_time": null,
-      "address": "Рязанский проспект, 75с1",
+      "address": "Москва, Рязанский проспект, 75, стр. 1",
       "hours": null,
-      "coords": null,
+      "coords": [
+        55.71778,
+        37.79242
+      ],
       "image": "placeholder.svg",
       "menu": [],
       "features": [],
@@ -644,15 +644,13 @@
       },
       "category": "Магазины",
       "verification": {
-        "status": "pending",
-        "checked_at": "2026-11-08",
-        "source": null,
-        "source_label": null,
-        "note": "Адрес есть в официальных материалах Ленты 2025 года; текущая работа не подтверждена.",
-        "historical_source": "https://lenta.com/globalassets/actions-news/-/_2025/02/Adresnaya-programma-Dubayskiy-shokolad-fevral-mart-2025.pdf"
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/super_lenta/52967738788/",
+        "source_label": "Яндекс.Карты — карточка конкретного филиала"
       },
       "original_address": "Рязанский проспект, 75с1",
-      "coordinate_status": "needs_geocoding",
+      "coordinate_status": "confirmed",
       "schedule": null,
       "price": {
         "status": "unknown",
@@ -660,8 +658,60 @@
         "amount": null,
         "source": null,
         "checked_at": null
-      }
+      },
+      "coordinate_source": "https://yandex.ru/maps/org/super_lenta/52967738788/",
+      "coordinate_checked_at": "2026-11-09",
+      "coordinate_note": "Точка организации по Яндекс.Картам; вход в помещение уточняйте на месте.",
+      "maps_url": "https://yandex.ru/maps/org/super_lenta/52967738788/"
     }
   ],
-  "checked_at": "2026-11-08"
+  "checked_at": "2026-11-09",
+  "excluded_places": [
+    {
+      "id": 8,
+      "name": "Чайхана Аура",
+      "type": "Ресторан",
+      "rating": null,
+      "reviews_count": null,
+      "avg_price": null,
+      "distance": null,
+      "walk_time": null,
+      "address": "Москва, Рязанский проспект, 75, корп. 3",
+      "hours": null,
+      "coords": [
+        55.717503,
+        37.794046
+      ],
+      "image": "placeholder.svg",
+      "menu": [],
+      "features": [],
+      "student_discount": {
+        "status": "unknown",
+        "details": "Сведения о студенческой скидке пока не подтверждены. Уточните условия перед заказом.",
+        "source": null,
+        "checked_at": null,
+        "valid_until": null,
+        "student_card_required": null
+      },
+      "category": "Рестораны",
+      "verification": {
+        "status": "confirmed",
+        "checked_at": "2026-11-09",
+        "source": "https://yandex.ru/maps/org/turetskiy_doner/228812562635/",
+        "source_label": "Яндекс.Карты — закрывшееся заведение"
+      },
+      "original_address": "Рязанский проспект, 77",
+      "coordinate_status": "confirmed",
+      "schedule": null,
+      "price": {
+        "status": "unknown",
+        "kind": null,
+        "amount": null,
+        "source": null,
+        "checked_at": null
+      },
+      "operation_status": "permanently_closed",
+      "excluded_reason": "В Яндекс.Картах: «Больше не работает»."
+    }
+  ]
 }

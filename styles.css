@@ -2425,3 +2425,5 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 
 .place-status.closed{background:#eef2f6;color:#526174}.campus-status.closed{background:rgba(255,255,255,.14);color:#e3edf7}.hero-count{max-width:240px;line-height:1.5;font-size:15px}.hero-green-row{gap:15px}
+
+.place-address{font-size:12px;line-height:1.5;margin:4px 0;color:#526174;overflow-wrap:anywhere}.campus-card .place-address{color:#e3edf7}
