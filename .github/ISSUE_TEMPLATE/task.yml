@@ -1,0 +1,27 @@
+name: Задача MVP
+description: Изменение с ответственным и проверяемым результатом
+title: "[AG] "
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Пользовательская история и цель
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Ответственный и роль
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+      placeholder: Проверяемые пункты списка
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Проверки, ссылки на PR и источники

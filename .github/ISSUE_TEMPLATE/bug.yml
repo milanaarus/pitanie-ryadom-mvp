@@ -1,0 +1,26 @@
+name: Ошибка MVP
+description: Воспроизводимая проблема в опубликованном проекте
+title: "[BUG] "
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый и фактический результат
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Браузер, устройство, ширина экрана, дата и версия
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Снимок экрана и результат повторной проверки
