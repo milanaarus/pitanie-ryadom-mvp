@@ -1,0 +1,294 @@
+{
+  "project": "Питание рядом: навигатор студента",
+  "snapshot_date": "2026-11-22",
+  "repository": "https://github.com/milanaarus/pitanie-ryadom-mvp",
+  "site": "https://pitanie-ryadom-mvp.onrender.com/",
+  "project_url": "https://github.com/users/milanaarus/projects/1",
+  "baseline_ref": "c8c1043ac5c0b8436da872117039b02870553766",
+  "note": "AG-01…04 восстановлены по истории Git. Их Issues создаются сейчас, не задним числом. AG-05…12 — текущая работа и предложенный план. Оценки в story points предварительные, не часы и не фактическая скорость команды.",
+  "team": [
+    {
+      "name": "Милана Хафизова",
+      "role": "Руководитель",
+      "responsibility": "Приоритеты, границы MVP, подтверждение цен и скидок, связь с преподавателем, приёмка результата."
+    },
+    {
+      "name": "Вера Лабузова",
+      "role": "Тимлид",
+      "responsibility": "Декомпозиция, актуальность канбана, зависимости, проверка изменений и подготовка выпуска."
+    },
+    {
+      "name": "Милана Арушанова",
+      "role": "Разработчик",
+      "github": "milanaarus",
+      "responsibility": "Код, данные каталога, исправления, технические проверки и публикация."
+    },
+    {
+      "name": "Мариам Еганян",
+      "role": "Тестировщик",
+      "responsibility": "Тестовые сценарии, воспроизведение ошибок, проверка критериев приёмки и повторные проверки."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "AG-01",
+      "title": "Яндекс.Карты и синхронные метки",
+      "status": "Done",
+      "owner": "Милана Арушанова",
+      "priority": "P0",
+      "points": null,
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "story": "Как студент, хочу видеть места на привычной карте и открывать карточку выбранного заведения.",
+      "acceptance": [
+        "Используется официальный API Яндекс.Карт, прежний Leaflet удалён.",
+        "Фильтры изменяют каталог и набор меток.",
+        "Совпадающие точки позволяют выбрать отдельные заведения."
+      ],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/e51b5abceebb151327532cbe4a4964e86e27ebaa",
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/c8f77082e26015a414b332988c822eac307a8387"
+      ],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/1"
+    },
+    {
+      "id": "AG-02",
+      "title": "Проверенные адреса 12 мест",
+      "status": "Done",
+      "owner": "Милана Арушанова",
+      "priority": "P0",
+      "points": null,
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "story": "Как студент, хочу знать точный адрес филиала перед выходом из корпуса.",
+      "acceptance": [
+        "Для 12 активных записей указаны адрес, координаты, источник и дата.",
+        "Закрывшийся «Турецкий донер» исключён из основного каталога.",
+        "Название «Шаварм’е» соответствует карточке филиала."
+      ],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/55329d92c12d870bc0544e64e05ce7a0f205fa1b"
+      ],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/2"
+    },
+    {
+      "id": "AG-03",
+      "title": "Честные цены и статусы скидок",
+      "status": "Done",
+      "owner": "Милана Арушанова",
+      "priority": "P0",
+      "points": null,
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "story": "Как студент, хочу отличать проверенную цену и скидку от отсутствующих сведений.",
+      "acceptance": [
+        "Примерные цены, рейтинг и минуты пешком убраны.",
+        "Неизвестная цена подписана «Цены уточняются».",
+        "Для скидки существуют unknown, confirmed и unavailable.",
+        "Фильтр скидок учитывает только подтверждённые предложения."
+      ],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/e51b5abceebb151327532cbe4a4964e86e27ebaa"
+      ],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/3"
+    },
+    {
+      "id": "AG-04",
+      "title": "Публикация MVP и повторная загрузка карты",
+      "status": "Done",
+      "owner": "Милана Арушанова",
+      "priority": "P0",
+      "points": null,
+      "start": "2026-11-08",
+      "end": "2026-11-09",
+      "story": "Как преподаватель, хочу открыть MVP по публичной ссылке без установки.",
+      "acceptance": [
+        "MVP опубликован на Render.",
+        "Каталог доступен при ошибке внешней карты.",
+        "Есть кнопка повторной загрузки карты."
+      ],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/43d95faed6373cac6934dcc094dbfea453428a38",
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/commit/c8c1043ac5c0b8436da872117039b02870553766",
+        "https://pitanie-ryadom-mvp.onrender.com/"
+      ],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/4"
+    },
+    {
+      "id": "AG-05",
+      "title": "Agile-процесс и материалы этапа",
+      "status": "In review",
+      "owner": "Вера Лабузова",
+      "priority": "P0",
+      "points": 3,
+      "start": "2026-11-22",
+      "end": "2026-11-23",
+      "story": "Как участник команды, хочу видеть единый бэклог, роли, сроки и подтверждения выполнения.",
+      "acceptance": [
+        "В репозитории опубликованы бэклог, канбан, Гант, правила и статистика Git.",
+        "Задачи связаны с GitHub Issues.",
+        "Руководитель и тимлид ознакомились с предложенным процессом и приняли его."
+      ],
+      "evidence": [],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/5"
+    },
+    {
+      "id": "AG-06",
+      "title": "Автоматическая проверка данных в GitHub",
+      "status": "In review",
+      "owner": "Милана Арушанова",
+      "priority": "P1",
+      "points": 3,
+      "start": "2026-11-22",
+      "end": "2026-11-23",
+      "story": "Как разработчик, хочу замечать повреждение каталога до публикации.",
+      "acceptance": [
+        "Команда npm test работает без внешних зависимостей.",
+        "CI проверяет синтаксис JavaScript и согласованность data.js с data.json.",
+        "Невалидные координаты и неподтверждённые суммы не проходят проверку.",
+        "Есть успешный запуск GitHub Actions.",
+        "Вера приняла технические проверки; до этого задача остаётся In review."
+      ],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/actions/runs/45056269748",
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/pull/13"
+      ],
+      "dependencies": [
+        "AG-05"
+      ],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/6"
+    },
+    {
+      "id": "AG-07",
+      "title": "Регрессия основных сценариев MVP",
+      "status": "Ready",
+      "owner": "Мариам Еганян",
+      "priority": "P0",
+      "points": 5,
+      "start": "2026-11-24",
+      "end": "2026-11-27",
+      "story": "Как студент, хочу находить место, сохранять его и открывать правильный маршрут.",
+      "acceptance": [
+        "Проверены поиск, фильтры, сортировка, избранное и сравнение.",
+        "Проверены 12 меток, соответствие карточек и маршруты.",
+        "Проверен отказ карты, результат записан со средой и датой.",
+        "Ошибки оформлены отдельными задачами, повторная проверка зафиксирована."
+      ],
+      "evidence": [],
+      "dependencies": [
+        "AG-06"
+      ],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/7"
+    },
+    {
+      "id": "AG-08",
+      "title": "Проверить цены выбранных филиалов",
+      "status": "Ready",
+      "owner": "Милана Хафизова",
+      "priority": "P0",
+      "points": 5,
+      "start": "2026-11-23",
+      "end": "2026-11-27",
+      "story": "Как студент, хочу оценить бюджет полноценного приёма пищи.",
+      "acceptance": [
+        "Проверены минимум три конкретных филиала, результат может быть «не подтверждено».",
+        "Для подтверждённых сумм сохранены вид цены, источник и дата.",
+        "Цена кофе не обозначает стоимость обеда.",
+        "Мариам проверила соответствие источника филиалу перед переносом данных."
+      ],
+      "evidence": [],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/8"
+    },
+    {
+      "id": "AG-09",
+      "title": "Уточнить студенческие скидки",
+      "status": "Ready",
+      "owner": "Милана Хафизова",
+      "priority": "P1",
+      "points": 3,
+      "start": "2026-11-25",
+      "end": "2026-11-29",
+      "story": "Как студент, хочу знать условия скидки до заказа.",
+      "acceptance": [
+        "Проверены минимум три заведения; отсутствие ответа остаётся unknown.",
+        "Для подтверждённой акции указаны условия, студбилет, срок, источник и дата.",
+        "Отсутствие скидки отмечается только по подтверждению заведения."
+      ],
+      "evidence": [],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/9"
+    },
+    {
+      "id": "AG-10",
+      "title": "Проверить мобильную версию",
+      "status": "Ready",
+      "owner": "Мариам Еганян",
+      "priority": "P0",
+      "points": 3,
+      "start": "2026-11-30",
+      "end": "2026-12-02",
+      "story": "Как студент с телефоном, хочу читать карточки и пользоваться картой без наложений.",
+      "acceptance": [
+        "Проверены ширины 390 и 768 пикселей либо реальные устройства сопоставимого размера.",
+        "Нет горизонтального прокручивания страницы и наложения кнопок.",
+        "Сохранены снимки экрана и сведения о среде.",
+        "Исправления проходят повторную проверку."
+      ],
+      "evidence": [],
+      "dependencies": [
+        "AG-07"
+      ],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/10"
+    },
+    {
+      "id": "AG-11",
+      "title": "Фотографии конкретных филиалов",
+      "status": "Backlog",
+      "owner": "Милана Арушанова",
+      "priority": "P2",
+      "points": 3,
+      "start": "2026-11-30",
+      "end": "2026-12-04",
+      "story": "Как студент, хочу узнавать вход и интерьер нужного филиала по фотографии.",
+      "acceptance": [
+        "Использованы собственные фото или фото с разрешением на публикацию.",
+        "Записаны автор, источник, разрешение и конкретный филиал.",
+        "При отсутствии подходящего фото остаётся нейтральная заглушка."
+      ],
+      "evidence": [],
+      "dependencies": [],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/11"
+    },
+    {
+      "id": "AG-12",
+      "title": "Апробация и решение о следующем выпуске",
+      "status": "Backlog",
+      "owner": "Милана Хафизова",
+      "priority": "P1",
+      "points": 3,
+      "start": "2026-12-03",
+      "end": "2026-12-06",
+      "story": "Как руководитель, хочу выбрать следующие улучшения по наблюдениям пользователей.",
+      "acceptance": [
+        "План: пригласить не менее пяти студентов, без утверждения о проведённом исследовании.",
+        "Дать задания найти место, сравнить варианты и открыть маршрут.",
+        "Собрать обезличенные наблюдения и новые задачи.",
+        "Вера и руководитель решают, какие задачи включить в следующий цикл."
+      ],
+      "evidence": [],
+      "dependencies": [
+        "AG-07",
+        "AG-10"
+      ],
+      "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/12"
+    }
+  ],
+  "pull_request_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/pull/13",
+  "ci_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/actions/runs/45056269748"
+}

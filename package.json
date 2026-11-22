@@ -1,0 +1,10 @@
+{
+  "name": "pitanie-ryadom-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node --check script.js && node --check data.js && node --test tests/data-contract.test.cjs",
+    "git:report": "node tools/git-report.mjs",
+    "agile:build": "node tools/build-agile.mjs"
+  }
+}

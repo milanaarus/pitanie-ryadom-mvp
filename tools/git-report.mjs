@@ -1,0 +1,12 @@
+import {execFileSync} from 'node:child_process';
+import {writeFileSync,mkdirSync} from 'node:fs';
+const ref=process.argv[2]||'HEAD';
+const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+const sha=git('rev-parse','--verify',ref+'^{commit}');
+const rows=git('log',sha,'--date=iso-strict','--format=%H%x09%aN%x09%aI%x09%s').split('\n').filter(Boolean).map(line=>{const [sha,author,date,...subject]=line.split('\t');return {sha,author,date,subject:subject.join('\t')};});
+const authors={},days={};for(const c of rows){authors[c.author]=(authors[c.author]||0)+1;const date=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Moscow'}).format(new Date(c.date));days[date]=(days[date]||0)+1;}
+const tracked=git('ls-tree','-r','--name-only',sha).split('\n').filter(Boolean);
+const report={ref:sha,scope:'Коммиты, достижимые из выбранного ref, без приписывания работы участникам без Git-истории',commit_count:rows.length,author_count:Object.keys(authors).length,authors,days,tracked_file_count:tracked.length,commits:rows};
+mkdirSync('agile',{recursive:true});writeFileSync('agile/git-stats.json',JSON.stringify(report,null,2)+'\n');
+const md=['# Статистика Git','',`Срез: [${sha.slice(0,7)}](https://github.com/milanaarus/pitanie-ryadom-mvp/commit/${sha}). Это состояние MVP до оформления Agile, а не автоматически обновляемое число текущих коммитов.`,`Повторить: node tools/git-report.mjs ${sha}`,'',`Коммитов: **${rows.length}**. Авторов в Git: **${Object.keys(authors).length}**. Отслеживаемых файлов: **${tracked.length}**.`,'','| Автор Git | Коммиты |','| --- | --- |',...Object.entries(authors).map(([a,n])=>`| ${a} | ${n} |`),'','| Дата по Москве | Коммиты |','| --- | --- |',...Object.entries(days).sort().map(([d,n])=>`| ${d} | ${n} |`),'','| Коммит | Дата | Изменение |','| --- | --- | --- |',...rows.map(c=>`| [${c.sha.slice(0,7)}](https://github.com/milanaarus/pitanie-ryadom-mvp/commit/${c.sha}) | ${c.date.slice(0,10)} | ${c.subject.replaceAll('|','/')} |`),'','История фиксирует один аккаунт milanaarus. Вклад руководителя, тимлида и тестировщика оценивается по задачам, решениям и результатам проверок. Число коммитов не измеряет качество или индивидуальную продуктивность. Закрытые сейчас исторические задачи не доказывают прошлую скорость команды. Burndown, velocity и даты старых командных встреч не восстанавливаются без исходных записей.',''];
+writeFileSync('agile/git-stats.md',md.join('\n'));console.log(`Git report: ${rows.length} commits, ${Object.keys(authors).length} author(s), ref ${sha.slice(0,7)}`);
