@@ -1,0 +1,58 @@
+{
+  "ref": "c8c1043ac5c0b8436da872117039b02870553766",
+  "scope": "Коммиты, достижимые из выбранного ref, без приписывания работы участникам без Git-истории",
+  "commit_count": 7,
+  "author_count": 1,
+  "authors": {
+    "milanaarus": 7
+  },
+  "days": {
+    "2026-11-09": 2,
+    "2026-11-08": 5
+  },
+  "tracked_file_count": 8,
+  "commits": [
+    {
+      "sha": "c8c1043ac5c0b8436da872117039b02870553766",
+      "author": "milanaarus",
+      "date": "2026-11-09T05:18:48+03:00",
+      "subject": "Allow retry after slow map connection"
+    },
+    {
+      "sha": "55329d92c12d870bc0544e64e05ce7a0f205fa1b",
+      "author": "milanaarus",
+      "date": "2026-11-09T05:08:04+03:00",
+      "subject": "Verify branch addresses and map points; exclude closed doner"
+    },
+    {
+      "sha": "c8f77082e26015a414b332988c822eac307a8387",
+      "author": "milanaarus",
+      "date": "2026-11-08T21:39:04+03:00",
+      "subject": "Use source-verified coordinates without live geocoding"
+    },
+    {
+      "sha": "82d32465a3b741af7a8abc20a2e010c6d9305509",
+      "author": "milanaarus",
+      "date": "2026-11-08T21:32:21+03:00",
+      "subject": "Delete leaflet.css"
+    },
+    {
+      "sha": "36eade8de1346f3f49ebbfa1d124573fc4dccb8f",
+      "author": "milanaarus",
+      "date": "2026-11-08T21:31:20+03:00",
+      "subject": "Delete leaflet.js"
+    },
+    {
+      "sha": "e51b5abceebb151327532cbe4a4964e86e27ebaa",
+      "author": "milanaarus",
+      "date": "2026-11-08T21:29:03+03:00",
+      "subject": "Restore Yandex Maps and remove unverified prices"
+    },
+    {
+      "sha": "43d95faed6373cac6934dcc094dbfea453428a38",
+      "author": "milanaarus",
+      "date": "2026-11-08T18:43:29+03:00",
+      "subject": "Publish student navigator MVP"
+    }
+  ]
+}
