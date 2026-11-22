@@ -121,7 +121,7 @@
     {
       "id": "AG-05",
       "title": "Agile-процесс и материалы этапа",
-      "status": "In progress",
+      "status": "In review",
       "owner": "Вера Лабузова",
       "priority": "P0",
       "points": 3,
@@ -140,7 +140,7 @@
     {
       "id": "AG-06",
       "title": "Автоматическая проверка данных в GitHub",
-      "status": "In progress",
+      "status": "In review",
       "owner": "Милана Арушанова",
       "priority": "P1",
       "points": 3,
@@ -151,9 +151,13 @@
         "Команда npm test работает без внешних зависимостей.",
         "CI проверяет синтаксис JavaScript и согласованность data.js с data.json.",
         "Невалидные координаты и неподтверждённые суммы не проходят проверку.",
-        "Есть успешный запуск GitHub Actions."
+        "Есть успешный запуск GitHub Actions.",
+        "Вера приняла технические проверки; до этого задача остаётся In review."
       ],
-      "evidence": [],
+      "evidence": [
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/actions/runs/45056269748",
+        "https://github.com/milanaarus/pitanie-ryadom-mvp/pull/13"
+      ],
       "dependencies": [
         "AG-05"
       ],
@@ -284,5 +288,7 @@
       ],
       "issue_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/issues/12"
     }
-  ]
+  ],
+  "pull_request_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/pull/13",
+  "ci_url": "https://github.com/milanaarus/pitanie-ryadom-mvp/actions/runs/45056269748"
 }

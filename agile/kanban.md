@@ -16,14 +16,14 @@ WIP: In progress ≤ 2, In review ≤ 2. Одна задача в работе �
 - [AG-09](https://github.com/milanaarus/pitanie-ryadom-mvp/issues/9) Уточнить студенческие скидки — Милана Хафизова, P1
 - [AG-10](https://github.com/milanaarus/pitanie-ryadom-mvp/issues/10) Проверить мобильную версию — Мариам Еганян, P0
 
-## В работе (2)
+## В работе (0)
+
+Пока нет задач.
+
+## На проверке (2)
 
 - [AG-05](https://github.com/milanaarus/pitanie-ryadom-mvp/issues/5) Agile-процесс и материалы этапа — Вера Лабузова, P0
 - [AG-06](https://github.com/milanaarus/pitanie-ryadom-mvp/issues/6) Автоматическая проверка данных в GitHub — Милана Арушанова, P1
-
-## На проверке (0)
-
-Пока нет задач.
 
 ## Готово (4)
 
